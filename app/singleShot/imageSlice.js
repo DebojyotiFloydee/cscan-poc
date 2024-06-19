@@ -12,17 +12,17 @@ export const imageSlice = createSlice({
             console.log(state, action)
             const img = {
                 id: action.payload.id,
-                src: action.payload.imgsrc,
+                src: action.payload.src,
                 counter: action.payload.counter,
             }
             state.image.push(img)
         },
-        clearImages:(state, action)=>{
-          state.image = []  
+        clearImages: (state, action) => {
+            state.image = []
         }
     }
 })
 
-export const {addImage, clearImages} = imageSlice.actions
+export const { addImage, clearImages } = imageSlice.actions
 
 export default imageSlice.reducer
