@@ -33,9 +33,7 @@ const InstallApplication = () => {
       className="install-text"
       aria-label="Install app"
       title="Install app"
-      onClick={() => {
-        installApp();
-      }}
+      onClick={installApp}
     >
       Install
     </button>
