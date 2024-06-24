@@ -31,6 +31,11 @@ nav a {
     color: #77F818;
 }
 
+.iphone_arrow_up{
+    display: inline;
+    height: 20px;
+}
+
 .locationContent {
     position: relative;
     top: 20px;

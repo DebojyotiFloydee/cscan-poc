@@ -12,7 +12,7 @@ export const imageSlice = createSlice({
             console.log(state, action)
             const img = {
                 id: action.payload.id,
-                src: action.payload.src,
+                src: action.payload.src.split("data:image/jpeg;base64,")[1],
                 counter: action.payload.counter,
             }
             state.image.push(img)
